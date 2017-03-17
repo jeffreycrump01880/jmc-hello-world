@@ -24,7 +24,7 @@ Master login: devuser/letmeinnow
   * Add IP to security group for the instance
 
 
-  jcrump@JCRUMPMAC3:~/jmc/aws$ ssh -i /Users/jcrump/jmc/aws/jcrump-adminuser.pem ec2-user@ec2-54-202-64-115.us-west2.compute.amazonaws.com
+    jcrump@JCRUMPMAC3:~/jmc/aws$ ssh -i /Users/jcrump/jmc/aws/jcrump-adminuser.pem ec2-user@ec2-54-202-64-115.us-west2.compute.amazonaws.com
 
 ### Initialize Database
 
@@ -32,11 +32,10 @@ Once you can use 'mysql' to log in to the DB instance, set up the schema:
 
 % mysql -h aaxfgfb2zfv3xb.cfkkwmdp41io.us-west-2.rds.amazonaws.com -P 3306 --user=devuser --password=letmeinnow
 
- create database hello_world;
- use hello_world;
- create table greetings (id INT unique not null, value VARCHAR(1024));
- insert into greetings (id, value) values (1, "Hello Amazon");
- select * from greetings;
+    create database hello_world;
+    use hello_world;create table greetings (id INT unique not null, value VARCHAR(1024));
+    insert into greetings (id, value) values (1, "Hello Amazon");
+    select * from greetings;
  
 App Notes:
 ==========
