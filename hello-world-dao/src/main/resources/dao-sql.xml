@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+
+    <entry key="getGreetingById">
+        SELECT * FROM greetings WHERE id = :id
+    </entry>
+    
+    <entry key="createGreeting">
+        INSERT INTO greetings (id, value) values (:id, :value)    
+    </entry>
+
+</properties>
